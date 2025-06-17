@@ -1,0 +1,109 @@
+/* src/index.css */
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+
+/* Body Styling */
+body {
+  font-family: 'Inter', sans-serif; /* Ensures consistent font if you want to use Inter font globally */
+  background-color: #f9fafb; /* Light gray background for a clean look */
+  color: #333; /* Dark text color for contrast */
+  line-height: 1.6; /* Increase line height for better readability */
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Styling (H1-H6) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Semi-bold headers for better readability */
+  margin-bottom: 1rem; /* Adds spacing below headers */
+}
+
+h1 {
+  font-size: 2.25rem; /* Large font size for main headings */
+}
+
+h2 {
+  font-size: 1.875rem; /* Slightly smaller size for sub-headings */
+}
+
+h3 {
+  font-size: 1.5rem; /* Continue to decrease as you go down */
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5, h6 {
+  font-size: 1rem;
+}
+
+/* Link Styling */
+a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #1d4ed8; /* Tailwind's blue color for links */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+a:hover {
+  color: #2563eb; /* A slightly darker shade of blue on hover */
+}
+
+/* Button Styling (General) */
+button {
+  cursor: pointer; /* Ensures pointer cursor on hover over buttons */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #2563eb; /* Darker blue background on hover for buttons */
+  color: white; /* Ensures text stays white on hover */
+}
+
+/* Tailwind Container Customization */
+.container {
+  max-width: 1200px; /* Adjust the max width for larger screens */
+  margin: 0 auto; /* Center content */
+}
+
+/* Footer Specific Styles */
+footer {
+  background-color: #f3f4f6; /* Lighter background for the footer */
+}
+
+footer a {
+  color: #4b5563; /* Slightly lighter text color for links in the footer */
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #1d4ed8; /* Blue color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  /* Adjust padding for small screens */
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Tailwind Colors and Fonts (for default customization) */
+@layer base {
+  /* Apply a global font family and color scheme */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+  }
+}
